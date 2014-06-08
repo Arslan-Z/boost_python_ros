@@ -37,7 +37,7 @@
 from cStringIO import StringIO
 from roslib import packages
 from roslib import msgs
-from roslib import rospack
+import rospkg
 import os
 import re
 import itertools as it
@@ -286,7 +286,7 @@ def qualify(name):
         return MSG_TYPE_TO_CPP[name]
 
 def get_msg_spec(pkg, msg):
-    path = rospack.rospackexec(['find', pkg])
+    path = rospkg.RosPack().get_path(pkg)
     return msgs.load_from_file("{0}/msg/{1}.msg".format(path, msg), pkg)[1]
 
 def class_docstring(spec):

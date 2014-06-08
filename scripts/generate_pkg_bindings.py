@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import roslib
-roslib.load_manifest('boost_python_ros')
 import sys
 import os
 import os.path

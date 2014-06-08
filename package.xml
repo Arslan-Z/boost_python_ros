@@ -1,0 +1,18 @@
+<package format="2">
+  <name>boost_python_ros</name>
+  <version>0.1.0</version>
+  <description>
+    Temporary package for holding Boost python bindings for ROS message types, to avoid circular dependencies elsewhere.
+  </description>
+  <author>Bhaskara Marthi</author>
+  <maintainer email="vincent.rabaud@gmail.com">Vicnent Rabaud</maintainer>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/boost_python_ros</url>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>roslib</depend>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
